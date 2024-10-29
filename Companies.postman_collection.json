@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "79c358da-d7fb-416b-ab73-259904b2082b",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38599769"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ParentCompanyID\": null,\r\n    \"Name\": \"Компания 1\",\r\n    \"INN\": \"123456789012\",\r\n    \"Phone\": \"2024-10-28\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5198/api/companies/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5198",
+					"path": [
+						"api",
+						"companies",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5198/api/companies/read",
+					"host": [
+						"localhost"
+					],
+					"port": "5198",
+					"path": [
+						"api",
+						"companies",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Компания 1\",\r\n    \"INN\": \"123456789012\",\r\n    \"Phone\": \"2024-10-29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5198/api/companies/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5198",
+					"path": [
+						"api",
+						"companies",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Компания 1\",\r\n    \"INN\": \"123456789012\",\r\n    \"Phone\": \"2023-10-29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5198/api/companies/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5198",
+					"path": [
+						"api",
+						"companies",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "shelter_test_task_2408",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
